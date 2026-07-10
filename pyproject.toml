@@ -1,10 +1,42 @@
 [project]
-name = "S_ARIMA_X"
+name = "ai_for_business_prognosis"
 version = "0.1.0"
 description = ""
 readme = "README.md"
 requires-python = ">=3.12"
+
 dependencies = [
+    "ipykernel>=7.2.0",
+    "nbeats-pytorch>=1.8.0",
+    "ipywidgets>=8.1.7",
+    "scikit-learn>=1.9.0",
+    "statsmodels>=0.14.6",
+]
+
+[dependency-groups]
+live_demos = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "nbeats-pytorch>=1.8.0",
+    "numpy>=2.0.0",
+    "pandas>=3.0.3",
+    "plotly>=6.8.0",
+    "pmdarima>=2.1.1",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+]
+
+nbeats = [
+    "ipykernel>=7.2.0",
+    "nbeats-pytorch>=1.8.0",
+    "ipywidgets>=8.1.7",
+    "scikit-learn>=1.9.0",
+    "statsmodels>=0.14.6",
+]
+
+sarima = [
     "ipywidgets>=8.1.7",
     "ipykernel>=7.2.0",
     "jupyter>=1.1.1",
