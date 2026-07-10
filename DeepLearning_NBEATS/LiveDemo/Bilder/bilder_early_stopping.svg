@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="450" viewBox="0 0 880 450" font-family="system-ui, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="pfeil" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 z" fill="#52514e"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="450" fill="white"/>
+
+  <text x="70" y="28" font-size="15" font-weight="bold" fill="#0b0b0b">Early Stopping: am Validierungsminimum stoppen</text>
+  <text x="70" y="46" font-size="12" fill="#52514e">allgemeines Prinzip: Fehlerverlauf über die Trainingsepochen</text>
+
+  <!-- patience-Fenster -->
+  <rect x="420.0" y="70" width="111.0" height="290" fill="#f0efec"/>
+  <text x="475.5" y="88" text-anchor="middle" font-size="11" font-weight="bold" fill="#52514e">patience</text>
+  <text x="475.5" y="103" text-anchor="middle" font-size="10" fill="#52514e">einige Epochen ohne</text>
+  <text x="475.5" y="116" text-anchor="middle" font-size="10" fill="#52514e">Verbesserung</text>
+
+  <!-- Achsen -->
+  <line x1="70" y1="360" x2="840" y2="360" stroke="#52514e" stroke-width="1.2" marker-end="url(#pfeil)"/>
+  <line x1="70" y1="360" x2="70" y2="60" stroke="#52514e" stroke-width="1.2" marker-end="url(#pfeil)"/>
+  <text x="840" y="380" text-anchor="end" font-size="11" fill="#52514e">Epoche</text>
+  <text x="62" y="56" text-anchor="start" font-size="11" fill="#52514e">Fehler</text>
+
+  <!-- Kurven: bis zum Abbruch durchgezogen, danach nur angedeutet -->
+  <path d="M70.0,77.0 L77.4,84.8 L84.8,92.4 L92.2,99.7 L99.6,106.8 L107.0,113.7 L114.4,120.3 L121.8,126.8 L129.2,133.0 L136.6,139.1 L144.0,144.9 L151.4,150.6 L158.8,156.1 L166.2,161.4 L173.6,166.6 L181.0,171.5 L188.4,176.4 L195.8,181.1 L203.2,185.6 L210.6,190.0 L218.0,194.2 L225.4,198.3 L232.8,202.3 L240.2,206.2 L247.6,209.9 L255.0,213.6 L262.4,217.1 L269.8,220.5 L277.2,223.8 L284.6,227.0 L292.0,230.0 L299.4,233.0 L306.8,235.9 L314.2,238.7 L321.6,241.5 L329.0,244.1 L336.4,246.6 L343.8,249.1 L351.2,251.5 L358.6,253.8 L366.0,256.0 L373.4,258.2 L380.8,260.3 L388.2,262.4 L395.6,264.3 L403.0,266.2 L410.4,268.1 L417.8,269.9 L425.2,271.6 L432.6,273.3 L440.0,274.9 L447.4,276.5 L454.8,278.0 L462.2,279.5 L469.6,280.9 L477.0,282.3 L484.4,283.7 L491.8,285.0 L499.2,286.2 L506.6,287.5 L514.0,288.6 L521.4,289.8 L528.8,290.9" fill="none" stroke="#9ec5f4" stroke-width="2.5"/>
+  <path d="M531.0,291.2 L538.4,292.3 L545.8,293.3 L553.2,294.3 L560.6,295.3 L568.0,296.2 L575.4,297.1 L582.8,298.0 L590.2,298.9 L597.6,299.7 L605.0,300.5 L612.4,301.2 L619.8,302.0 L627.2,302.7 L634.6,303.4 L642.0,304.1 L649.4,304.8 L656.8,305.4 L664.2,306.0 L671.6,306.6 L679.0,307.2 L686.4,307.7 L693.8,308.3 L701.2,308.8 L708.6,309.3 L716.0,309.8 L723.4,310.3 L730.8,310.8 L738.2,311.2 L745.6,311.6 L753.0,312.1 L760.4,312.5 L767.8,312.9 L775.2,313.3 L782.6,313.6 L790.0,314.0 L797.4,314.3 L804.8,314.7" fill="none" stroke="#9ec5f4" stroke-width="2" stroke-dasharray="4,5" opacity="0.45"/>
+  <path d="M70.0,97.0 L77.4,105.6 L84.8,113.9 L92.2,121.8 L99.6,129.3 L107.0,136.5 L114.4,143.4 L121.8,150.0 L129.2,156.4 L136.6,162.4 L144.0,168.1 L151.4,173.6 L158.8,178.9 L166.2,183.8 L173.6,188.6 L181.0,193.1 L188.4,197.4 L195.8,201.5 L203.2,205.4 L210.6,209.1 L218.0,212.5 L225.4,215.8 L232.8,219.0 L240.2,221.9 L247.6,224.7 L255.0,227.3 L262.4,229.8 L269.8,232.1 L277.2,234.2 L284.6,236.3 L292.0,238.1 L299.4,239.9 L306.8,241.5 L314.2,243.0 L321.6,244.4 L329.0,245.6 L336.4,246.7 L343.8,247.8 L351.2,248.7 L358.6,249.5 L366.0,250.2 L373.4,250.8 L380.8,251.3 L388.2,251.7 L395.6,252.0 L403.0,252.3 L410.4,252.4 L417.8,252.5 L425.2,252.5 L432.6,252.4 L440.0,252.2 L447.4,252.0 L454.8,251.7 L462.2,251.3 L469.6,250.8 L477.0,250.3 L484.4,249.7 L491.8,249.0 L499.2,248.3 L506.6,247.5 L514.0,246.6 L521.4,245.7 L528.8,244.8" fill="none" stroke="#eb6834" stroke-width="2.5"/>
+  <path d="M531.0,244.5 L538.4,243.4 L545.8,242.3 L553.2,241.2 L560.6,239.9 L568.0,238.7 L575.4,237.4 L582.8,236.0 L590.2,234.6 L597.6,233.1 L605.0,231.6 L612.4,230.1 L619.8,228.4 L627.2,226.8 L634.6,225.1 L642.0,223.4 L649.4,221.6 L656.8,219.7 L664.2,217.9 L671.6,216.0 L679.0,214.0 L686.4,212.0 L693.8,210.0 L701.2,207.9 L708.6,205.8 L716.0,203.6 L723.4,201.4 L730.8,199.2 L738.2,196.9 L745.6,194.6 L753.0,192.2 L760.4,189.9 L767.8,187.4 L775.2,185.0 L782.6,182.5 L790.0,180.0 L797.4,177.4 L804.8,174.8" fill="none" stroke="#eb6834" stroke-width="2" stroke-dasharray="4,5" opacity="0.45"/>
+
+  <!-- bestes Modell (Checkpoint) -->
+  <line x1="420.0" y1="252.5" x2="420.0" y2="360" stroke="#0b0b0b" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="420.0" cy="252.5" r="6" fill="#eb6834" stroke="white" stroke-width="2"/>
+  <text x="408.0" y="286.5" text-anchor="end" font-size="11" font-weight="bold" fill="#0b0b0b">niedrigster Validierungsfehler:</text>
+  <text x="408.0" y="301.5" text-anchor="end" font-size="11" fill="#52514e">Checkpoint gespeichert</text>
+
+  <!-- Abbruch -->
+  <line x1="531.0" y1="70" x2="531.0" y2="360" stroke="#e34948" stroke-width="1.4" stroke-dasharray="6,4"/>
+  <text x="539.0" y="88" font-size="11" font-weight="bold" fill="#e34948">Training stoppt hier</text>
+
+  <!-- Overfitting-Hinweis -->
+  <text x="684.2" y="174.6" text-anchor="middle" font-size="11" fill="#52514e">Overfitting: Validierungsfehler</text>
+  <text x="684.2" y="188.6" text-anchor="middle" font-size="11" fill="#52514e">steigt wieder</text>
+  <text x="699.0" y="296.7" text-anchor="middle" font-size="11" fill="#52514e">Trainingsfehler sinkt weiter</text>
+
+  <!-- Legende -->
+  <line x1="700" y1="88" x2="730" y2="88" stroke="#9ec5f4" stroke-width="2.5"/>
+  <text x="736" y="92" font-size="11" fill="#0b0b0b">Trainingsfehler</text>
+  <line x1="700" y1="108" x2="730" y2="108" stroke="#eb6834" stroke-width="2.5"/>
+  <text x="736" y="112" font-size="11" fill="#0b0b0b">Validierungsfehler (Holdout)</text>
+
+  <text x="70" y="408" font-size="11" fill="#0b0b0b">Am Ende werden die Gewichte des <tspan font-weight="bold">Checkpoints</tspan> geladen – nicht die der letzten Epoche.</text>
+</svg>
