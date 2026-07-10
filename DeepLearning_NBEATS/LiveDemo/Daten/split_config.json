@@ -1,0 +1,11 @@
+{
+  "test_days": 14,
+  "target": "Electric_demand",
+  "freq": "1h",
+  "exog_vars_reduced": [
+    "Temperature",
+    "Wind_speed",
+    "PV_production",
+    "Wind_production"
+  ]
+}

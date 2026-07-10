@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="470" viewBox="0 0 920 470" font-family="system-ui, 'Segoe UI', sans-serif">
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#f6f5f2"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#898781" stroke-width="1.6"/>
+    </pattern>
+    <marker id="pfeil" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 z" fill="#52514e"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="470" fill="white"/>
+
+  <text x="60" y="28" font-size="15" font-weight="bold" fill="#0b0b0b">Sliding Windows &amp; temporales Holdout</text>
+  <text x="60" y="46" font-size="12" fill="#52514e">Input-Fenster (Rückblick der Länge L) → Ziel-Fenster (Horizont H) – gebildet aus der Trainingsreihe</text>
+
+  <!-- Holdout-Bereich in der Reihe -->
+  <rect x="740" y="56" width="140" height="84" fill="url(#hatch)" stroke="#898781" stroke-width="1"/>
+  <text x="810.0" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="#52514e">Holdout (letzter Block, Länge H)</text>
+
+  <!-- Zeitreihe + Achse -->
+  <path d="M60,102.0 L63,94.0 L66,87.4 L69,83.4 L72,82.2 L75,83.4 L78,86.0 L81,88.5 L84,89.9 L87,89.6 L90,87.6 L93,84.8 L96,82.5 L99,82.0 L102,84.1 L105,89.1 L108,96.3 L111,104.5 L114,112.2 L117,117.9 L120,121.0 L123,121.3 L126,119.6 L129,116.9 L132,114.7 L135,114.0 L138,115.0 L141,117.5 L144,120.3 L147,122.2 L150,121.9 L153,118.8 L156,113.0 L159,105.3 L162,97.1 L165,89.9 L168,85.0 L171,82.9 L174,83.4 L177,85.5 L180,88.1 L183,89.8 L186,89.8 L189,88.1 L192,85.3 L195,82.6 L198,81.4 L201,82.5 L204,86.6 L207,93.2 L210,101.2 L213,109.2 L216,115.7 L219,119.7 L222,120.9 L225,119.8 L228,117.4 L231,115.1 L234,114.0 L237,114.6 L240,116.9 L243,119.8 L246,122.3 L249,122.8 L252,120.7 L255,115.7 L258,108.5 L261,100.3 L264,92.7 L267,86.9 L270,83.9 L273,83.6 L276,85.2 L279,87.7 L282,89.6 L285,90.0 L288,88.7 L291,86.0 L294,83.0 L297,81.0 L300,81.3 L303,84.4 L306,90.3 L309,98.0 L312,106.1 L315,113.2 L318,118.1 L321,120.2 L324,119.7 L327,117.7 L330,115.4 L333,114.0 L336,114.2 L339,116.2 L342,119.2 L345,122.1 L348,123.4 L351,122.3 L354,118.2 L357,111.6 L360,103.5 L363,95.6 L366,89.1 L369,85.2 L372,84.0 L375,85.1 L378,87.3 L381,89.4 L384,90.2 L387,89.3 L390,86.7 L393,83.5 L396,81.0 L399,80.4 L402,82.5 L405,87.5 L408,94.8 L411,102.9 L414,110.5 L417,116.2 L420,119.2 L423,119.5 L426,117.9 L429,115.7 L432,114.0 L435,113.9 L438,115.5 L441,118.5 L444,121.7 L447,123.7 L450,123.5 L453,120.4 L456,114.5 L459,106.8 L462,98.7 L465,91.6 L468,86.8 L471,84.8 L474,85.2 L477,87.1 L480,89.2 L483,90.3 L486,89.8 L489,87.5 L492,84.2 L495,81.2 L498,79.8 L501,80.9 L504,85.1 L507,91.7 L510,99.7 L513,107.6 L516,114.0 L519,117.9 L522,119.0 L525,118.0 L528,115.9 L531,114.1 L534,113.6 L537,114.8 L540,117.6 L543,121.0 L546,123.7 L549,124.4 L552,122.3 L555,117.2 L558,110.0 L561,101.8 L564,94.3 L567,88.7 L570,85.8 L573,85.5 L576,86.9 L579,89.0 L582,90.4 L585,90.3 L588,88.3 L591,85.1 L594,81.7 L597,79.5 L600,79.7 L603,82.9 L606,88.8 L609,96.4 L612,104.5 L615,111.5 L618,116.2 L621,118.3 L624,117.9 L627,116.1 L630,114.2 L633,113.3 L636,114.2 L639,116.7 L642,120.2 L645,123.4 L648,124.9 L651,123.8 L654,119.7 L657,113.1 L660,105.1 L663,97.2 L666,90.9 L669,87.1 L672,86.0 L675,86.9 L678,88.9 L681,90.5 L684,90.7 L687,89.1 L690,86.0 L693,82.4 L696,79.6 L699,78.9 L702,81.0 L705,86.0 L708,93.3 L711,101.4 L714,108.8 L717,114.3 L720,117.2 L723,117.6 L726,116.2 L729,114.3 L732,113.1 L735,113.6 L738,115.8 L741,119.3 L744,122.9 L747,125.1 L750,125.0 L753,121.8 L756,116.0 L759,108.3 L762,100.3 L765,93.4 L768,88.7 L771,86.8 L774,87.1 L777,88.8 L780,90.5 L783,91.1 L786,89.9 L789,87.0 L792,83.3 L795,80.0 L798,78.4 L801,79.5 L804,83.6 L807,90.2 L810,98.2 L813,105.9 L816,112.2 L819,115.9 L822,117.0 L825,116.1 L828,114.3 L831,112.9 L834,113.0 L837,114.9 L840,118.2 L843,122.1 L846,125.0 L849,125.8 L852,123.7 L855,118.6 L858,111.4 L861,103.4 L864,96.0 L867,90.6 L870,87.8 L873,87.5 L876,88.8 L879,90.5" fill="none" stroke="#52514e" stroke-width="1.3"/>
+  <line x1="55" y1="150" x2="895" y2="150" stroke="#52514e" stroke-width="1.2" marker-end="url(#pfeil)"/>
+  <text x="893" y="166" text-anchor="end" font-size="11" fill="#52514e">Zeit</text>
+
+  <!-- Grenze zum Holdout -->
+  <line x1="740" y1="52" x2="740" y2="440" stroke="#e34948" stroke-width="1.2" stroke-dasharray="6,4"/>
+
+  <!-- Überlappende Trainingsfenster -->
+  <text x="60" y="174" font-size="12" font-weight="bold" fill="#0b0b0b">Überlappende Trainingsfenster:</text>
+  <rect x="60" y="182" width="140" height="32" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6" stroke-width="1.6"/><text x="130.0" y="202.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Input (L)</text><rect x="200" y="182" width="140" height="32" rx="4" fill="#e34948" fill-opacity="0.16" stroke="#e34948" stroke-width="1.6"/><text x="270.0" y="202.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Ziel (H)</text>
+  <rect x="100" y="220" width="140" height="32" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6" stroke-width="1.6"/><text x="170.0" y="240.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Input (L)</text><rect x="240" y="220" width="140" height="32" rx="4" fill="#e34948" fill-opacity="0.16" stroke="#e34948" stroke-width="1.6"/><text x="310.0" y="240.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Ziel (H)</text>
+  <rect x="140" y="258" width="140" height="32" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6" stroke-width="1.6"/><text x="210.0" y="278.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Input (L)</text><rect x="280" y="258" width="140" height="32" rx="4" fill="#e34948" fill-opacity="0.16" stroke="#e34948" stroke-width="1.6"/><text x="350.0" y="278.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Ziel (H)</text>
+  <text x="430" y="306" font-size="12" fill="#52514e">… viele überlappende Fenster, je einen Zeitschritt weitergeschoben</text>
+  <rect x="460" y="316" width="140" height="32" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6" stroke-width="1.6"/><text x="530.0" y="336.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Input (L)</text><rect x="600" y="316" width="140" height="32" rx="4" fill="#e34948" fill-opacity="0.16" stroke="#e34948" stroke-width="1.6"/><text x="670.0" y="336.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Ziel (H)</text>
+  <text x="448" y="336" text-anchor="end" font-size="11" fill="#52514e">letztes Fenster: Ziel endet genau am Holdout-Rand →</text>
+
+  <!-- Validierungs-Fenster -->
+  <text x="60" y="384" font-size="12" font-weight="bold" fill="#0b0b0b">Validierung („Generalprobe“):</text>
+  <text x="60" y="402" font-size="11" fill="#52514e">Kontext = die L Zeitschritte direkt vor dem Holdout,</text>
+  <text x="60" y="417" font-size="11" fill="#52514e">Ziel = der Holdout-Block selbst</text>
+  <rect x="600" y="390" width="140" height="32" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6" stroke-width="1.6" stroke-dasharray="5,3"/><text x="670.0" y="410.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Kontext (L)</text><rect x="740" y="390" width="140" height="32" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834" stroke-width="1.6"/><text x="810.0" y="410.0" text-anchor="middle" font-size="11" fill="#0b0b0b">Ziel = Holdout</text>
+
+  <text x="732" y="438" text-anchor="end" font-size="10" fill="#e34948">Trainingsfenster enden spätestens hier</text>
+  <text x="60" y="460" font-size="9.5" fill="#898781">Schema, nicht maßstabsgetreu · Fensterbau erst nach Abtrennen des Holdouts – kein Data Leakage</text>
+</svg>
