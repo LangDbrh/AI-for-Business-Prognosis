@@ -1,4 +1,4 @@
-# AI-for-Business-Prognosis-S-ARIMA-X-
+# AI-for-Business-Prognosis
 
 Willkommen im Projekt-Repository für das Modul "AI for Business Prognosis" (Prof. Dr. Carsten Lanquillon). In diesem Repo teilen wir unsere Methodentutorials und das Abschlussprojekt.
 
