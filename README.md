@@ -1,6 +1,8 @@
 # AI-for-Business-Prognosis
 
-Willkommen im Projekt-Repository für das Modul "AI for Business Prognosis" (Prof. Dr. Carsten Lanquillon). In diesem Repo teilen wir unsere Methodentutorials und das Abschlussprojekt.
+Willkommen im Projekt-Repository für das Modul **"AI for Business Prognosis"**
+(Prof. Dr. Carsten Lanquillon). Das Repo bündelt unsere Methodentutorials,
+Live-Demos und das Capstone-Projekt zur mehrjährigen BIP-Prognose.
 
 ## 👥 Team
 
@@ -8,35 +10,47 @@ Willkommen im Projekt-Repository für das Modul "AI for Business Prognosis" (Pro
 - Deborah Lang
 - Marius Riesle
 
-## 📈 Methoden
+## 📈 Inhalte und Methoden
 
-- (S)ARIMA(X) (klassische Zeitreihenanalyse)
-- N-BEATS (Deep Learning)
+### Tutorial- und Demo-Teile
+
+- `(S)ARIMA(X)` für klassische Zeitreihenanalyse
+- `N-BEATS` als Deep-Learning-Ansatz
+
+### Capstone-Projekt `CapstoneProjekt_BPI`
+
+Im Capstone wird das **reale BIP-Wachstum mehrerer Länder** prognostiziert.
+Dafür werden einheitliche Datenpipelines, klassische Modelle und moderne
+Deep-Learning-/Foundation-Model-Ansätze kombiniert:
+
+- `SARIMAX`
+- `Temporal Fusion Transformer (TFT)`
+- `Chronos-2`
+- modellübergreifender Vergleich in einem separaten Evaluations-Notebook
+
+Weitere Details stehen in `CapstoneProjekt_BPI/README.md`.
 
 ## 📦 Installation
 
 > ℹ️ **PyTorch (CPU vs. CUDA):** Standardmäßig wird die **CPU-Variante** von PyTorch installiert.
 > Wer eine NVIDIA-GPU nutzen möchte, kann stattdessen die **CUDA-Variante** installieren (siehe unten).
 
-### Base environment für die aktuelle Aufgabe
+### Standard-Setup
 
 ```bash
 uv sync
 
 or
 
+uv sync --group capstone
+```
+
+### Zusätzliche Gruppen
+
+```bash
+uv sync --group capstone
 uv sync --group nbeats
-```
-
-### SARIMA environment
-
-```bash
 uv sync --group sarima
-```
-
-### Live-demo environment
-
-```bash
 uv sync --group live_demos
 ```
 
@@ -49,7 +63,7 @@ Standard (`uv sync`) installiert die CPU-Variante. Für die CUDA-Variante die
 uv sync --no-group cpu --group cu124
 ```
 
-Das lässt sich mit den übrigen Gruppen kombinieren, z.B.:
+Beispiel in Kombination mit einer Fachgruppe:
 
 ```bash
 uv sync --group nbeats --no-group cpu --group cu124
@@ -64,19 +78,34 @@ uv sync --group nbeats --no-group cpu --group cu124
 ```text
 AI-for-Business-Prognosis/
 ├── README.md
-├── pyproject.toml                                      # Projektabhängigkeiten und Gruppendefinitionen
-├── uv.lock                                             # Gelockte Abhängigkeiten (uv)
+├── pyproject.toml
+├── CapstoneProjekt_BPI/                                # Abschlussprojekt zur Multi-Country-BIP-Prognose
+│   ├── Präsentation_capstone_BIP.pdf
+│   ├── 01_Datenbeschaffung_Aufbereitung.ipynb          # Datenbeschaffung und Panel-Aufbereitung
+│   ├── 02_SARIMAX.ipynb                                # Klassisches SARIMAX Forecasting
+│   ├── 03_TFT.ipynb                                    # Temporal Fusion Transformer
+│   ├── 04_Chronos.ipynb                                # Chronos-2
+│   ├── 05_Vergleich.ipynb                              # Vergleich der Modellgüte
+│   ├── 06_BIP-Animations.ipynb                         # Visualisierung/Animation
+│   ├── README.md
+│   ├── data/
+│   │   ├── processed/                                  # Aufbereitete Paneldaten
+│   │   ├── raw/                                        # Rohdaten und Metadaten
+│   │   └── results/                                    # Modellvorhersagen und Ergebnisse
+│   ├── figures/
+│   ├── pitch and plan/
+│   └── src/                                            # Gemeinsame Python-Module für die Notebooks
 ├── DeepLearning_NBEATS/                                # N-BEATS als Deep-Learning-Methode
-│   ├── Präsentation_NBEATS.pdf                         # Präsentation als PDF
-│   ├── HandsOnÜbung/
-│   │   ├── N_BEATS_HandsOnÜbung.ipynb                  # Notebook zur Hands-On-Übung
-│   │   └── data/                                       # Daten für die HandsOn-Übung
-│   └── LiveDemo/
-│       ├── N_BEATS_LiveDemo.ipynb                      # Notebook zu der Live-Demo
-│       ├── Bilder/                                     # Grafiken für die Live-Demo
-│       └── Daten/                                      # Daten (Export aus dem SARIMAX-Notebook)
+│   ├── Präsentation_NBEATS.pdf
+│   ├── HandsOnÜbung/                                   # Notebook + Daten für HandsOn-Übung
+│   │   ├── N_BEATS_HandsOnÜbung.ipynb
+│   │   └── data/
+│   └── LiveDemo/                                       # Notebook + Daten für Live-Demo
+│       ├── N_BEATS_LiveDemo.ipynb
+│       ├── Bilder/
+│       └── Daten/
 └── KlassischeMethode_S_ARIMA_X/                        # (S)ARIMA(X) als klassische Methode
-    ├── Präsentation_SArimaX.pdf                        # Präsentation als PDF
+    ├── Präsentation_SArimaX.pdf
     ├── S_ARIMA_X_LiveDemo.ipynb                        # Notebook zu der Live-Demo
     ├── S_ARIMA_X_HandsOnÜbung_BhkwPfettscher.ipynb     # Notebook zu der HandsOn-Übung
     ├── BHKWs_Daten/                                    # Daten für die HandsOn-Übung
